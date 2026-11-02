@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🥪 ORDER UP
+# 🥪 YesChef
 ### Voice-Conditioned Sandwich Assembly on a reBot Arm
 
 **Revolute Hackathon 2026** · FabLab Kendall · Cambridge, MA  
@@ -15,6 +15,8 @@
 <br/>
 
 **Say the order. See the station. Serve the sandwich.**
+
+### [▶️ Demo video](https://youtu.be/7AaO0o-qSSI) · [📝 Devpost](https://devpost.com/software/yeschef-ujtk23) · [📑 Pitch deck](./Revolute%20Hackathon%20-%20YesChef.pdf)
 
 *A judge walks up, speaks a sandwich order, and a 6‑DOF arm executes recorded kitchen skills on a fixed deli station — with on-device language + vision, and a teleop fallback so the deli never goes down.*
 
@@ -32,74 +34,23 @@
 
 ## 🎬 Demo Gallery / Video
 
-> **Drop final clips in [`video/`](./video/).**  
-> GitHub will render MP4s inline once files land. Until then, placeholders mark the collage.
+<div align="center">
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h3>01 · One-minute showcase</h3>
-      <p><em>Voice → intent → sandwich → “Order up!”</em></p>
-      <!-- After upload: <video src="./video/01-one-minute-showcase.mp4" controls width="100%"></video> -->
-      <a href="./video/">
-        <img src="https://via.placeholder.com/640x360/1a1a2e/e94560?text=01+·+1-min+Showcase+%0A%0A%5Bdrop+file+in+video%2F%5D" width="100%" alt="1-min showcase placeholder"/>
-      </a>
-      <p><code>video/01-one-minute-showcase.mp4</code></p>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h3>02 · Live order (science fair)</h3>
-      <p><em>Judge places a custom order at the table</em></p>
-      <a href="./video/">
-        <img src="https://via.placeholder.com/640x360/16213e/ffffff?text=02+·+Live+Order+%0A%0A%5Bdrop+file+in+video%2F%5D" width="100%" alt="Live order placeholder"/>
-      </a>
-      <p><code>video/02-live-order.mp4</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h3>03 · Teleop → trajectory capture</h3>
-      <p><em>Leader arm demos that become skills</em></p>
-      <a href="./video/">
-        <img src="https://via.placeholder.com/640x360/0f3460/ffd21e?text=03+·+Teleop+Capture+%0A%0A%5Bdrop+file+in+video%2F%5D" width="100%" alt="Teleop capture placeholder"/>
-      </a>
-      <p><code>video/03-teleop-capture.mp4</code></p>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h3>04 · Vision ingredient gate</h3>
-      <p><em>Qwen2.5-VL checks labeled mise en place</em></p>
-      <a href="./video/">
-        <img src="https://via.placeholder.com/640x360/533483/ffffff?text=04+·+Vision+Gate+%0A%0A%5Bdrop+file+in+video%2F%5D" width="100%" alt="Vision gate placeholder"/>
-      </a>
-      <p><code>video/04-vision-ingredient-gate.mp4</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <h3>05 · Failure recovery (teleop handoff)</h3>
-      <p><em>Graceful degradation is a feature — not an apology</em></p>
-      <a href="./video/">
-        <img src="https://via.placeholder.com/960x320/1a1a2e/e94560?text=05+·+Fallback+Storyboard+%0A%0A%5Bdrop+file+in+video%2F%5D" width="80%" alt="Fallback placeholder"/>
-      </a>
-      <p><code>video/05-fallback-teleop.mp4</code></p>
-    </td>
-  </tr>
-</table>
+**▶️ Watch the hackathon demo on YouTube**
 
-<details>
-<summary><b>How to publish videos into this gallery</b></summary>
+<a href="https://youtu.be/7AaO0o-qSSI">
+  <img src="https://img.youtube.com/vi/7AaO0o-qSSI/maxresdefault.jpg" width="80%" alt="YesChef: hackathon demo video"/>
+</a>
 
-1. Export short MP4s (H.264, ≤ ~50–80 MB each for comfortable GitHub browsing; larger files → Git LFS or external link).
-2. Place them in [`video/`](./video/) using the filenames above (or update this README).
-3. Uncomment the `<video src="...">` tags (or keep clickable placeholders).
-4. Prefer **one hero 60s clip** for Devpost/Hackster + this gallery.
+[youtu.be/7AaO0o-qSSI](https://youtu.be/7AaO0o-qSSI)
 
-</details>
+</div>
 
 ---
 
 ## 🧠 What we built
 
-**Order Up** is a **deli station**, not a free-form chef.
+**YesChef** is a **deli station**, not a free-form chef.
 
 | Layer | Behavior |
 |-------|----------|
@@ -311,7 +262,7 @@ python voice_to_ollama.py \
 ## 🧪 Demo script (science-fair table)
 
 1. **Station ready** — taped bins, labeled cards, plate, E-stop known  
-2. **Cold open** — “We’re Order Up: speak a sandwich order.”  
+2. **Cold open** — “We’re YesChef: speak a sandwich order.”  
 3. **Live order** — judge speaks or types a sandwich phrase  
 4. **Vision beat** — show console: present / missing ingredients  
 5. **Motion beat** — trajectories execute; open-face stack appears  
@@ -329,10 +280,10 @@ Official Revolute scoring (100 pts):
 | Category | Pts | How this repo + demo address it |
 |----------|----:|----------------------------------|
 | **Documentation completeness** | **40** | |
-| · Presentation deck | 5 | Organizer/team deck assets in repo (`Revolute Hackathon.pdf`) + external drive/PPT link in submission |
+| · Presentation deck | 5 | [YesChef pitch deck (PDF)](./Revolute%20Hackathon%20-%20YesChef.pdf) · [Devpost submission](https://devpost.com/software/yeschef-ujtk23) |
 | · **GitHub + versioned code + README** | **10** | This document · [`commands.txt`](./commands.txt) · [`voice_agent/`](./voice_agent/) · trajectory artifacts · patches · commit history |
 | · Live demo | 15 | Table script above · kill-switch ladder · fixed station |
-| · Demo video + project intro | 10 | [`video/`](./video/) collage + Devpost/Hackster upload |
+| · Demo video + project intro | 10 | [YouTube demo](https://youtu.be/7AaO0o-qSSI) |
 | **Technical difficulty** | **30** | |
 | · Ambition | 10 | On-device LLM + VLM + multi-trajectory skills + optional STT |
 | · Accuracy | 10 | Label-based vision gate · intent match · calibrated teleop paths |
@@ -376,6 +327,7 @@ Official Revolute scoring (100 pts):
 | **Theme** | Cooking with robot arms |
 | **Hardware partners** | Seeed Studio reBot + reComputer Jetson |
 | **Framework** | Hugging Face LeRobot (this tree is a working hackathon fork with team extensions) |
+| **Submission** | [Devpost: YesChef](https://devpost.com/software/yeschef-ujtk23) · [Pitch deck (PDF)](./Revolute%20Hackathon%20-%20YesChef.pdf) · [Demo video](https://youtu.be/7AaO0o-qSSI) |
 
 > Built in ~48 hours. Optimized for a **reliable live demo**, not a paper.
 
@@ -387,7 +339,7 @@ Official Revolute scoring (100 pts):
 - [ ] Closed-face top-bread skill  
 - [ ] Streaming STT with barge-in cancel  
 - [ ] Multi-order queue / “hold the tomato” composition  
-- [ ] Publish 1‑min hero video to Devpost/Hackster  
+- [x] Publish demo video ([YouTube](https://youtu.be/7AaO0o-qSSI))  
 
 ---
 
@@ -402,10 +354,10 @@ Official Revolute scoring (100 pts):
 
 <div align="center">
 
-### *Order up.*
+### *Yes, Chef.*
 
 **Documentation is part of the product.**  
-If you’re a judge: thank you — open [`video/`](./video/), skim [`commands.txt`](./commands.txt), and ask us for a live sandwich.
+If you’re a judge: thank you — watch the [demo video](https://youtu.be/7AaO0o-qSSI), skim [`commands.txt`](./commands.txt), and ask us for a live sandwich.
 
 <br/>
 
